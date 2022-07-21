@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: rgb(0, 140, 255);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rgb(20, 38, 56);
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.error {
+  padding: 1rem;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(185, 35, 35);
+}
+
+.error mark {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 140, 255);
+}
+
+.form-search {
+  margin: auto;
+  text-align: center;
+}
+
+.form-search input {
+  display: block;
+  margin: auto;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.grid-fluid {
+  margin: 1rem auto;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.header {
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: rgb(26, 117, 121);
+}
+
+.header > * {
+  margin: 1rem auto;
+}
+
+.loader {
+  margin: 1rem auto;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+
+.post-card {
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 5%;
+  width: 80%;
+  background-color: #ecefff;
+}
+
+.post-card p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-page {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  background-color: #ecefff;
+}
+
+.post-page > aside {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.post.page > hr {
+  border: thin solid #cfd8cf;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.post-page time {
+  margin: 1rem auto;
+  display: block;
+}
+
+.post-page > article {
+  padding: 0 2rem;
+}
+
+.post-page img,
+.post-page figure,
+.post-page audio,
+.post-page iframe,
+.post-page video {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}

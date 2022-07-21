@@ -1,0 +1,15 @@
+export function Post(props) {
+  let { title, content, date } = props;
+  let dateFormat = new Date(date).toLocaleDateString();
+
+  return `
+  <section class="post-page">
+  <aside>
+  <h2>Titulo del Post: ${title.rendered}</h2>
+  <time datetime="${date}">${dateFormat}</time>
+  </aside>
+  <hr>
+  <article>${content.rendered}</article>
+  </section>
+  `;
+}
